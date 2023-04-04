@@ -1,0 +1,25 @@
+.header-cont {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  .active {
+    font-weight: bold;
+    color: rgb(43, 140, 129);
+  }
+  h2 {
+    &:hover {
+      color: rgb(43, 140, 129);
+    }
+  }
+  ul {
+    a {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.5rem;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: rgb(43, 140, 129);
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.personal-info {
+  h2 {
+    padding-top: 34px;
+  }
+  img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(43, 140, 129);
+  }
+
+  ul {
+    padding-top: 89px;
+    gap: 60px;
+    li {
+      font-size: 22px;
+      a {
+        font-weight: 600;
+        padding: 0.5rem;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: rgb(43, 140, 129);
+        }
+      }
+    }
+  }
+}

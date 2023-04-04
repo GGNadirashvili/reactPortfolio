@@ -1,0 +1,61 @@
+
+@mixin hover {
+  @media (min-width: 992px) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin mq($title) {
+  @if $title ==desktop-x {
+    @media (min-width: 2400px) {
+      @content;
+    }
+  }
+  @if $title ==desktop-xxl {
+    @media (min-width: 1921px) {
+      @content;
+    }
+  }
+
+  @if $title ==desktop-xl {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @if $title ==desktop-lg {
+    @media (max-width: 1679px) {
+      @content;
+    }
+  }
+
+  @if $title ==desktop-sm {
+    @media (max-width: 1439px) {
+      @content;
+    }
+  }
+
+  @if $title ==desktop-xs {
+    @media (max-width: 1279px) {
+      @content;
+    }
+  } @else if $title ==tablet {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $title ==mobile-lg {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $title ==mobile-sm {
+    @media (max-width: 479px) {
+      @content;
+    }
+  } @else if $title ==mobile-xs {
+    @media (max-width: 374px) {
+      @content;
+    }
+  }
+}

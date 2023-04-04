@@ -1,0 +1,93 @@
+.pointer {
+  cursor: pointer;
+}
+.regular {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.grab {
+  cursor: grab;
+}
+.white {
+  color: #fff;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+.j-btw {
+  justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.al-start {
+  align-items: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.block {
+  display: block;
+}
+
+.btn {
+  width: 144px;
+  height: 55px;
+  border-radius: 13px;
+  color: rgb(43, 140, 129);
+  border: 2px solid rgb(43, 140, 129);
+  background-color: transparent;
+  font-size: 20px;
+  transition: 0.6s;
+
+  &:hover {
+    font-size: 18px;
+    transition: 0.6s;
+    width: 140px;
+    height: 53px;
+  }
+}
