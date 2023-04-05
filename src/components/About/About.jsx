@@ -1,5 +1,5 @@
 import React from "react";
-import PersinalInfo from "../Header/Header";
+import Header from "../Header/Header";
 
 function About() {
   const cvUrl = "https://files.fm/u/srky2x9m5#/view/d2gng5vs8";
@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about-container container white flex">
       <div className="about-container__left">
-        <PersinalInfo />
+        <Header />
       </div>
       <div className="flex about-container__right ">
         <div className="about-container__right--first">
@@ -38,15 +38,14 @@ function About() {
           <h3>Age:28</h3>
           <h3>From:Tbilisi,Georgia</h3>
           <div>
-          <button className="btn">
-            {" "}
-            <a  target="_blank" href={cvUrl} download>
-              Download CV
-            </a>
-          </button>
+            <button className="btn">
+              {" "}
+              <a target="_blank" href={cvUrl} download>
+                Download CV
+              </a>
+            </button>
+          </div>
         </div>
-        </div>
-      
       </div>
     </div>
   );

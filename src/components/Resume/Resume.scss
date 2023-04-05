@@ -1,0 +1,94 @@
+.resume-container {
+  padding-top: 89px;
+  padding-bottom: 89px;
+  &__right {
+    width: 50%;
+    margin: auto;
+    gap: 50px;
+    .education-card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .resume-card {
+      margin-top: 30px;
+      background-color: rgb(5, 79, 59);
+      width: 450px;
+      border-radius: 13px;
+      &__info {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        h5 {
+          background-color: rgb(43, 140, 129);
+          width: max-content;
+          padding: 5px;
+          border-radius: 13px;
+        }
+        h3 {
+          font-size: 22px;
+          padding-top: 10px;
+        }
+        h4 {
+          font-size: 16px;
+          color: rgb(43, 140, 129);
+          padding-top: 10px;
+        }
+        p {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+  //   1440
+  @media only screen and (max-width: 1679px) {
+    .resume-card {
+      width: 400px;
+    }
+  }
+  //1280
+  @media only screen and (max-width: 1439px) {
+    .resume-card {
+      width: 300px;
+    }
+  }
+  //992
+  @media only screen and (max-width: 1279px) {
+    .resume-card {
+      width: 250px;
+    }
+  }
+  //768
+  @media only screen and (max-width: 991px) {
+    .resume-card {
+      width: 250px;
+    }
+    &__right {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 0px;
+      .resume-card {
+        width: 450px;
+      }
+    }
+  }
+  //480
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    &__right {
+        padding-top: 55px;
+
+      .resume-card {
+        width: 340px;
+      }
+    }
+  }
+  // 375
+  @media only screen and (max-width: 479px) {
+  }
+}
