@@ -1,10 +1,10 @@
 import React from "react";
-import PersonalInfo from "../PersonalInfo/PersonalInfo";
+import Header from "../Header/Header";
 function Projects() {
   return (
     <div className="projects-container container white flex">
       <div className="projects-container__left">
-        <PersonalInfo />
+        <Header />
       </div>
      <div className="column">
      <div className="projects-container__right ">My Work</div>

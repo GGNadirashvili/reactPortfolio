@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProfilePhoto from "../../styles/images/me.jpg";
 import { useState } from "react";
 
-function AppHeader() {
-  const [activePage, setActivePage] = useState("home");
+function Header() {
+  const [activePage, setActivePage] = useState("/");
   const handlePageClick = (page) => {
     setActivePage(page);
   };
   return (
-    <section className="header-cont container white flex al-center j-btw  ">
-      <div>
-        <h2 className="pointer">Logo</h2>
-      </div>
-      <div>
-        <ul className="flex ">
+      <div className="header-container">
+        <img src={ProfilePhoto} alt="" />
+        <h2 className="regular">Giorgi Nadirashvili</h2>
+        <ul className="flex column ">
           <li className={activePage === "" ? "active" : ""}>
             <Link onClick={() => handlePageClick("")} to="/">
               Home
@@ -24,20 +23,33 @@ function AppHeader() {
               About
             </Link>
           </li>
-          <li className={activePage === "contact" ? "active" : ""}>
-            <Link onClick={() => handlePageClick("contact")} to="/contact">
-              Contact
+          <li className={activePage === "resume" ? "active" : ""}>
+            <Link onClick={() => handlePageClick("resume")} to="/resume">
+              Resume
             </Link>
           </li>
+
           <li className={activePage === "projects" ? "active" : ""}>
             <Link onClick={() => handlePageClick("projects")} to="/projects">
               Projects
             </Link>
           </li>
+          <li className={activePage === "testimonial" ? "active" : ""}>
+            <Link
+              onClick={() => handlePageClick("testimonial")}
+              to="/testimonial"
+            >
+              Testimonial
+            </Link>
+          </li>
+          <li className={activePage === "contact" ? "active" : ""}>
+            <Link onClick={() => handlePageClick("contact")} to="/contact">
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
-    </section>
   );
 }
 
-export default AppHeader;
+export default Header;

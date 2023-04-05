@@ -1,25 +1,113 @@
-.header-cont {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 60px;
+.header-container {
   .active {
     font-weight: bold;
     color: rgb(43, 140, 129);
   }
   h2 {
-    &:hover {
-      color: rgb(43, 140, 129);
-    }
+    padding-top: 34px;
   }
+  img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(43, 140, 129);
+  }
+
   ul {
-    a {
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 0.5rem;
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        color: rgb(43, 140, 129);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    gap: 50px;
+    li {
+      font-size: 22px;
+      a {
+        font-weight: 600;
+        padding: 0.5rem;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: rgb(43, 140, 129);
+        }
       }
     }
   }
+
+  //responsive
+
+  //   1440
+  @media only screen and (max-width: 1679px) {
+    img {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      border: 5px solid rgb(43, 140, 129);
+    }
+    ul {
+      padding-top: 34px;
+      padding-bottom: 34px;
+      gap: 34px;
+      li {
+        font-size: 22px;
+        a {
+          font-weight: 600;
+          padding: 0.5rem;
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: rgb(43, 140, 129);
+          }
+        }
+      }
+    }
+  }
+  //1280
+  @media only screen and (max-width: 1439px) {
+  }
+  //992
+  @media only screen and (max-width: 1279px) {
+  }
+  //768
+  @media only screen and (max-width: 991px) {
+  }
+  //480
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img {
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      border: 5px solid rgb(43, 140, 129);
+    }
+    h2 {
+      font-size: 55px;
+    }
+    ul {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      gap: 16px;
+      li {
+        font-size: 34px;
+      }
+    }
+  }
+  // 375
+@media only screen and (max-width: 479px) {
+  h2 {
+    font-size: 34px;
+  }
+  img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(43, 140, 129);
+  }
+  ul {
+    li {
+      font-size: 21px;
+    }
+  }
 }
+}
+

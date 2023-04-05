@@ -1,5 +1,5 @@
 import React from "react";
-import PersinalInfo from "../PersonalInfo/PersonalInfo"
+import PersinalInfo from "../Header/Header"
 function Resume() {
   return (
     <div className="about-container container white">

@@ -1,11 +1,11 @@
 import React from "react";
-import PersonalInfo from "../PersonalInfo/PersonalInfo";
+import Header from "../Header/Header";
 
 function Testimonial() {
   return (
     <div className="testimonial-container container white flex">
       <div className="testimonial-container__left">
-        <PersonalInfo />
+        <Header />
       </div>
       <div className="testimonial-container__Right">Testimonial</div>
     </div>

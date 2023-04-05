@@ -1,10 +1,10 @@
 import React from "react";
-import PersonalInfo from "../PersonalInfo/PersonalInfo";
+import Header from "../Header/Header";
 function Contact() {
   return (
     <div className="contact-contaniner container white flex">
       <div className="contact-contaniner__left">
-        <PersonalInfo />
+        <Header />
       </div>
       <div className="contact-contaniner__right">
         <div className="first">

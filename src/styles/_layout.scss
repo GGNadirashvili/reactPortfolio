@@ -137,27 +137,27 @@
   }
 }
 
-.header-container {
-  width: 100%;
-  padding-left: 55px;
-  padding-right: 55px;
-  margin: 0 auto;
-  //768
-  @media only screen and (max-width: 991px) {
-    max-width: 991px;
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-  //480
-  @media only screen and (max-width: 767px) {
-    max-width: 991px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-  // 375-320
-  @media only screen and (max-width: 479px) {
-    max-width: 479px;
-    padding-left: 21px;
-    padding-right: 21px;
-  }
-}
+// .header-container {
+//   width: 100%;
+//   padding-left: 55px;
+//   padding-right: 55px;
+//   margin: 0 auto;
+//   //768
+//   @media only screen and (max-width: 991px) {
+//     max-width: 991px;
+//     padding-left: 55px;
+//     padding-right: 55px;
+//   }
+//   //480
+//   @media only screen and (max-width: 767px) {
+//     max-width: 991px;
+//     padding-left: 34px;
+//     padding-right: 34px;
+//   }
+//   // 375-320
+//   @media only screen and (max-width: 479px) {
+//     max-width: 479px;
+//     padding-left: 21px;
+//     padding-right: 21px;
+//   }
+// }

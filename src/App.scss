@@ -1,15 +1,12 @@
 @import url("./styles/_layout.scss");
 @import url("./styles/_reset.scss");
 @import url("./styles/_styles.scss");
-@import url("./components/Header/Header.scss");
+@import url("./styles/_responsive.scss");
 @import url("./components/Home/Home.scss");
-@import url("./components/PersonalInfo/PersonalInfo.scss");
+@import url("./components/Header/Header.scss");
 @import url("./components/About/About.scss");
 @import url("./components/Projects/Projects.scss");
 @import url("./components/Contact/Contact.scss");
 @import url("./components/Resume/Resume.scss");
 @import url("./components/Testimonial/Testimonial.scss");
 
-* {
-  background-color: #111418;
-}
