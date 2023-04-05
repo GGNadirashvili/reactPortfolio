@@ -31,11 +31,11 @@ function About() {
           <h3>Name:Giorgi Nadirashvili</h3>
           <h3>
             Email:
-            <a class="green" href="mailto:example@example.com">
+            <a className="green" href="mailto:example@example.com">
               GGnadirashvilii@gmail.com
             </a>
           </h3>
-          <h3>Age:28</h3>
+          <h3>Age:22</h3>
           <h3>From:Tbilisi,Georgia</h3>
           <div>
             <button className="btn">

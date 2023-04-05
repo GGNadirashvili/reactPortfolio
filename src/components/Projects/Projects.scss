@@ -1,7 +1,141 @@
 .projects-container {
   padding-top: 89px;
-  img {
-    width: 300px;
-    height: 300px;
+  .active {
+    color: rgb(43, 140, 129);
+  }
+  &__right {
+    padding-left: 30px;
+    .project-cards {
+      padding-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+
+      div {
+        position: relative;
+        width: 30%;
+        height: max-content;
+        margin-bottom: 2rem;
+
+        &:hover {
+          transform: 0.5s;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(31, 35, 34, 0.9);
+            z-index: 1;
+            border-radius: 13px;
+          }
+          h3,
+          a,
+          p {
+            opacity: 1;
+            color: rgb(43, 140, 129);
+          }
+        }
+
+        h3 {
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease-in-out;
+          z-index: 1;
+        }
+
+        a {
+          opacity: 0;
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease-in-out;
+          z-index: 1;
+        }
+        p {
+          opacity: 0;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease-in-out;
+          z-index: 1;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 13px;
+        }
+
+        p {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1920px) {
+  }
+  //   1440
+  @media only screen and (max-width: 1679px) {
+  }
+  //1280
+  @media only screen and (max-width: 1439px) {
+    &__right {
+      .project-cards {
+        div {
+          width: 45%;
+          height: max-content;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  //992
+  @media only screen and (max-width: 1279px) {
+  }
+  //768
+  @media only screen and (max-width: 991px) {
+    &__right {
+      .project-cards {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        div {
+          width: 100%;
+          height: max-content;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  //480
+  @media only screen and (max-width: 767px) {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    &__right {
+      .project-cards {
+        text-align: center;
+        align-items: center;
+        div {
+          width: 100%;
+          height: max-content;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  // 375
+  @media only screen and (max-width: 479px) {
   }
 }
