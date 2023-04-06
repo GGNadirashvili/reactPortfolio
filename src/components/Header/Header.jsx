@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ProfilePhoto from "../../styles/images/me.jpg";
 import { useState } from "react";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 function Header() {
   const [activePage, setActivePage] = useState("/");
@@ -48,6 +49,7 @@ function Header() {
             Contact
           </Link>
         </li>
+        <SocialIcons/>
       </ul>
     </div>
   );
