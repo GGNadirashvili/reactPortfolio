@@ -14,7 +14,7 @@ function SocialIcons() {
   };
 
   return (
-    <div className="flex gap-25">
+    <div className="social-icons flex gap-25 j-btw">
       <div onClick={handleFacebook} className="pointer">
         <Facebook />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Phone from "../../styles/Icons/Phone";
@@ -11,6 +11,9 @@ function Contact() {
   const [textareaValue, setTextareaValue] = useState("");
   const [isSent, setIsSent] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [formStatus, setFormStatus] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
 
   const isValidEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,6 +22,7 @@ function Contact() {
 
   const SendEmail = (e) => {
     e.preventDefault();
+
     if (nameValue.length < 2) {
       setError("Name should have at least 2 characters.");
       return;
@@ -31,13 +35,31 @@ function Contact() {
       setError("Please enter a valid gmail address.");
       return;
     }
-    console.log("submited");
-    setNameValue("");
-    setTextareaValue("");
-    setMailValue("");
-    setIsSent(true);
-    setError("");
+    setIsVisible(false);
+    setTimeout(() => setIsVisible(true), 5000);
+
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      setFormStatus("success");
+      setNameValue("");
+      setTextareaValue("");
+      setMailValue("");
+      setIsSent(true);
+      setError("");
+    }, 2000);
   };
+
+  useEffect(() => {
+    let timer;
+    if (formStatus) {
+      timer = setTimeout(() => {
+        setFormStatus("");
+      }, 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [formStatus]);
 
   return (
     <div className="contact-contaniner container white flex">
@@ -56,7 +78,9 @@ function Contact() {
             </div>
             <div className="mesage flex gap">
               <Message />{" "}
-              <a href="mailto:example@example.com">ggnadirashvilii@gmail.com</a>
+              <a href="mailto:ggnadirashvili@gmail.com">
+                ggnadirashvilii@gmail.com
+              </a>
             </div>
           </div>
           <div className="social">
@@ -102,7 +126,15 @@ function Contact() {
               ></textarea>
 
               <div className="flex j-center">
-                <button className="btn">Send Message</button>
+                <button className={isVisible ? "btn" : ""}>
+                  {isVisible && <div onClick={SendEmail}>Send Message</div>}
+                </button>
+                {formStatus && (
+                  <div className="succes">
+                    {formStatus === "success" ? "A message has been sent" : ""}
+                  </div>
+                )}{" "}
+                {loading && <div className="succes">Sending</div>}
               </div>
             </div>
           </form>
