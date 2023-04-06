@@ -25,7 +25,7 @@ function Projects() {
       <div className="column">
         <div className="projects-container__right ">
           <div className="flex column al-center gap-25">
-          <h2 className="ttl">Projects</h2>
+            <h2 className="ttl">Projects</h2>
             <div className="flex gap-25">
               <button
                 className={activeButton === "All" ? "active" : "white"}
@@ -53,10 +53,14 @@ function Projects() {
                 <div key={project.id}>
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <img src={project.image} alt={project.title} />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    href={project.url}
+                  />
                   <a className="btn flex al-center j-center" href={project.url}>
                     View project
-                  </a>
+                  </a>{" "}
                 </div>
               ))}
             </div>

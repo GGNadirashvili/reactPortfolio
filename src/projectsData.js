@@ -35,7 +35,9 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image:
       "https://images.unsplash.com/photo-1680484006397-64f3fcd8fc14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    url: "https://example.com/project-three",
   },
+
   {
     id: 5,
     title: "Project Five",
@@ -57,7 +59,7 @@ const projectsData = [
 
   {
     id: 7,
-    title: "Project Six",
+    title: "Project Seven",
     category: "React",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image:
@@ -66,7 +68,7 @@ const projectsData = [
   },
   {
     id: 8,
-    title: "Project Six",
+    title: "Project Eight",
     category: "React",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image:
@@ -75,7 +77,7 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "Project Six",
+    title: "Project Nine",
     category: "React",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image:
@@ -84,7 +86,7 @@ const projectsData = [
   },
   {
     id: 10,
-    title: "Project Six",
+    title: "Project Ten",
     category: "React",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image:

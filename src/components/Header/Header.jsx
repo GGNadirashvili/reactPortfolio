@@ -5,6 +5,7 @@ import { useState } from "react";
 
 function Header() {
   const [activePage, setActivePage] = useState("/");
+    
   const handlePageClick = (page) => {
     setActivePage(page);
   };

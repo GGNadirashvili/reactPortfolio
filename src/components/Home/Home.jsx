@@ -9,7 +9,7 @@ function Home() {
         <Header />
       </div>
       <div className="home-container__right flex column al-center">
-        <h3>Wellcome</h3>
+        <h3 className="ttl">Wellcome</h3>
         <h2 className="animated-text">I Am A Front-End Developer</h2>
         <h4>based in Tbilisi, Georgia.</h4>
         <li>

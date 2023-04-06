@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import Error from "./components/Error/Error";
 import Testimonial from "./components/Testimonial/Testimonial";
+// import ScrollToTop from "./components/Scroll/ScrollToTop";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      {/* <ScrollToTop /> */}
     </Router>
   );
 }

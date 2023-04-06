@@ -57,6 +57,10 @@
   align-items: center;
 }
 
+.t-center {
+  text-align: center;
+}
+
 .al-start {
   align-items: flex-start;
 }
@@ -117,15 +121,17 @@
     font-size: 34px;
   }
   //992
-  @media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1279px) {
     font-size: 34px;
   }
   //768
   @media only screen and (max-width: 991px) {
-    font-size: 55px;
+    font-size: 34px;
   }
   //480
   @media only screen and (max-width: 767px) {
+    font-size: 55px;
+
   }
   // 375
   @media only screen and (max-width: 479px) {
