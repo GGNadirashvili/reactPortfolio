@@ -3,6 +3,11 @@
     font-weight: bold;
     color: rgb(43, 140, 129);
   }
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #009688;
+  }
   h2 {
     padding-top: 34px;
   }
@@ -32,6 +37,7 @@
     .social-icons {
       padding-top: 20px;
       max-width: 100px;
+      
     }
   }
 
